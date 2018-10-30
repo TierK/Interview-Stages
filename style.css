@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic,cyrillic-ext');
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-left: 3em;
+}
+
+li {
+  padding: 0.1em;
+}
+
+.part {
+  display: flex;
+  justify-align: center;
+  justify-content: space-evenly;
+}
+
+.parts-container {
+  margin: auto;
+  margin-left: 40px;
+  padding: auto;
+  font-family: 'Cuprum', sans-serif;
+  color: #a0a0a0;
+  display: flex;
+  flex-wrap: wrap;
+  height: 10%;
+  overflow: auto;
+  z-index: 0;
+  border-left: 0.1em solid #a0a0a0;
+}
+
+.fixed-container {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  top 0;
+  left: 0;
+  position: fixed;
+  z-index: 101;
+  background-color: white;
+  padding-top: 1.5em;
+  padding-left: 1.5em;
+}
+
+section {
+  margin: 0;
+  padding-bottom: 4em;
+  width: auto;
+  font-size: 1em;
+  display: flex;
+  flex-flow: column;
+  overflow: hidden;
+  height: auto;
+}
+
+article {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.part {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.part-header {
+  display: flex;
+  font-family: 'Cuprum', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #a0a0a0;
+  padding-top: 0.3em;
+  border-left: 1px;
+}
+
+.recomend-title {
+  color: #1c1c1c;
+  width: 100%;
+  padding-top: 4em;
+  padding-left: 1em;
+}
+
+.circle-container,
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0.5em white, 0 0 1em white;
+  margin-right: 0.5em;
+  text-align: center;
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  font-family: 'Cuprum', sans-serif;
+}
+
+.circle-container {
+  background-color: #3385ff;
+}
+
+.footter {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-top: 3em;
+  flex-flow: column;
+}
+
+.part-two-sentences-list,
+.part-one-sentences-list,
+.part-three-sentences-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-flow: row wrap;
+  font-family: 'Cuprum', sans-serif;
+  color: #a0a0a0;
+}
+
+.sentences {
+  width: 48%;
+}
+
+.comment {
+  color: #3385ff;
+  font-size: 16px;
+  font-weight: bold;
+  margin: auto;
+  padding-bottom: 1em;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  background-color: #3385ff;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: bold;
+  box-shadow: inset 0 0 0.5em white, 0 0 1em white;
+  align-self: center;
+  margin: auto;
+}
+
+.answers-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+}
+
+.radio-item-blue {
+  direction: rtl;
+  align-self: stretch;
+  padding-right: 1em;
+}
+
+.part-two-or {
+  align-self: center;
+  text-align: center;
+  align-items: center;
+  /* border: 1px solid green;
+  */
+}
+
+.radio-item-red {
+  align-self: stretch;
+  padding-left: 1em;
+}
+
+.radio-item-blue span,
+.radio-item-red span {
+  display: flex;
+  min-width: 10px;
+}
+
+.radio-text {
+  padding: auto;
+  margin: auto;
+}
+
+.questions {
+  color: #1c1c1c;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.part-one-questions-list,
+.part-two-questions-list,
+.part-three-questions-list {
+  border: 1.5px solid #a0a0a0;
+  padding: 1.5%;
+  width: 94%;
+  min-height: 2em;
+  border-radius: 5px;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+/**************** RADIO **************/
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] {
+  color: #0475e5;
+}
+
+input[type="radio"]+label span {
+  width: 10px;
+  height: 10px;
+  margin: -1px 4px 0 0;
+  vertical-align: middle;
+  cursor: pointer;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+input[id="radio01"]+label span,
+input[id="radio03"]+label span {
+  border: 2px solid #0475e5;
+}
+
+input[id="radio01"]:checked+label span,
+input[id="radio03"]:checked+label span {
+  background-color: #0475e5;
+}
+
+input[id="radio02"]+label span,
+input[id="radio04"]+label span {
+  border: 2px solid #db1313;
+}
+
+input[id="radio02"]:checked+label span,
+input[id="radio04"]:checked+label span {
+  background-color: #db1313;
+}
+
+input[type="radio"]+label span,
+input[type="radio"]:checked+label span {
+  -webkit-transition: background-color 0.4s linear;
+  -o-transition: background-color 0.4s linear;
+  -moz-transition: background-color 0.4s linear;
+  transition: background-color 0.4s linear;
+}
+/****** END RADIO ***********/
+
+
+/********* ACTION OnClick *********/
+
+.hidden-on {
+  display: none;
+  transition: all 3s linear;
+}
+/********* END ACTION *********/
